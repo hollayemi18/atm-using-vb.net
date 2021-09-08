@@ -1,0 +1,720 @@
+Module Module1
+
+    Sub Main()
+        Dim enter As String
+        Dim p2 As String
+        Dim p1 As String
+        Dim pass As String
+        Dim money As Double
+        money = 35000.0
+        Dim password As String
+        password = 1234
+
+
+line:
+        Console.BackgroundColor = ConsoleColor.Black
+        Console.Clear()
+        Console.ForegroundColor = ConsoleColor.Red
+        Console.SetWindowSize(120, 40)
+        Console.SetBufferSize(120, 40)
+        Console.SetCursorPosition(30, 5)
+
+        Console.WriteLine(Environment.NewLine)
+        Console.WriteLine("                                         000000000000000000000000000000000099000")
+        Console.WriteLine("                                         0000000000000000000000000000000000")
+        Console.WriteLine("                                                                     00000")
+        Console.WriteLine("                                                                  0000")
+        Console.WriteLine("                                                               0000")
+        Console.WriteLine("                                                            0000")
+        Console.WriteLine("                                                         0000")
+        Console.WriteLine("                                                       0000")
+        Console.WriteLine("                                                     0000")
+        Console.WriteLine("                                                  0000")
+        Console.WriteLine("                                                0000")
+        Console.WriteLine("                                              0000")
+        Console.WriteLine("                                            011111111000")
+        Console.WriteLine("                                          0000")
+        Console.WriteLine("                                        00000")
+        Console.WriteLine("                                       000000000000000000000000000000000")
+        Console.WriteLine("                                       000000000000000000000000000000000")
+        Console.WriteLine(Environment.NewLine)
+        Console.WriteLine("                                               Zenith Bank PLC")
+        Console.WriteLine(Environment.NewLine)
+        Console.WriteLine("                                               Insert ATM Card")
+        Console.SetCursorPosition(55, 30)
+        enter = Console.ReadLine()
+        If enter = " " Then
+            GoTo line1
+        End If
+line1:
+        Console.BackgroundColor = ConsoleColor.Black
+        Console.Clear()
+        Console.ForegroundColor = ConsoleColor.Red
+        Console.SetWindowSize(120, 40)
+        Console.SetBufferSize(120, 40)
+        Console.WriteLine(Environment.NewLine)
+        Console.WriteLine("                                             Press ' 0 ' to ")
+        Console.WriteLine("                                           Terminate Transaction")
+        Console.WriteLine(Environment.NewLine)
+        Console.WriteLine("            Enter your PIN")
+        Console.WriteLine(Environment.NewLine + Environment.NewLine + Environment.NewLine + Environment.NewLine)
+        Console.ForegroundColor = ConsoleColor.White
+        Console.WriteLine("                                                                                Proceed")
+        Console.WriteLine(Environment.NewLine + Environment.NewLine + Environment.NewLine + Environment.NewLine + Environment.NewLine)
+        Console.ForegroundColor = ConsoleColor.Red
+        Console.WriteLine("           Please guide")
+        Console.WriteLine("          y o u r  P I N")
+        Console.WriteLine("         ensure no trespass")
+        Console.WriteLine(Environment.NewLine + Environment.NewLine + Environment.NewLine + Environment.NewLine + Environment.NewLine)
+        Console.ForegroundColor = ConsoleColor.White
+        Console.WriteLine("          NB:                             PLEASE USE NUMBER AS INDICATED ")
+
+        Console.SetCursorPosition(52, 8)
+
+        pass = Console.ReadLine()
+        If pass.Length = 4 Then
+            GoTo line3
+        ElseIf pass.Length <> 4 Then
+            GoTo line
+        ElseIf pass = "" Then
+            GoTo line2
+        End If
+line2:
+        Console.BackgroundColor = ConsoleColor.DarkGray
+        Console.Clear()
+        Console.ForegroundColor = ConsoleColor.Red
+        Console.SetWindowSize(120, 40)
+        Console.SetBufferSize(120, 40)
+        Console.WriteLine(Environment.NewLine + Environment.NewLine + Environment.NewLine)
+        Console.WriteLine("                                    Do you want to 'CONTINUE'")
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.ForegroundColor = ConsoleColor.White
+        Console.WriteLine("                                                                                Yes <1>")
+        Console.WriteLine(Environment.NewLine)
+        Console.WriteLine(Environment.NewLine)
+        Console.WriteLine("                                                                                 No <2>")
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.WriteLine("          NB:                             PLEASE USE NUMBER AS INDICATED ")
+        Console.SetCursorPosition(52, 8)
+        enter = Console.ReadLine()
+        If enter = "1" Then
+            GoTo line1
+        ElseIf enter = "2" Then
+            GoTo line
+        ElseIf enter = "" Then
+            GoTo line
+        End If
+line3:
+        Console.BackgroundColor = ConsoleColor.Black
+        Console.Clear()
+        Console.ForegroundColor = ConsoleColor.Red
+        Console.SetWindowSize(120, 40)
+        Console.SetBufferSize(120, 40)
+        Console.WriteLine(Environment.NewLine + Environment.NewLine + Environment.NewLine)
+        Console.WriteLine(Environment.NewLine)
+        Console.WriteLine("                                      Press '1' to proceed  ")
+        Console.WriteLine("                                      with other Transaction  ")
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.WriteLine("                                      Press '2' for selecting   ")
+        Console.WriteLine("                                      New PIN  ")
+        Console.WriteLine(Environment.NewLine + Environment.NewLine + Environment.NewLine)
+        Console.ForegroundColor = ConsoleColor.White
+        Console.WriteLine("                                                                             Main Menu <1>")
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.WriteLine("                                                                             Instant PIN <2>")
+        Console.WriteLine(Environment.NewLine + Environment.NewLine + Environment.NewLine + Environment.NewLine)
+        Console.ForegroundColor = ConsoleColor.Red
+        Console.WriteLine("                                   Press ' 0 ' to Terminate Transaction")
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.ForegroundColor = ConsoleColor.White
+
+        Console.WriteLine("          NB:                             PLEASE USE NUMBER AS INDICATED ")
+        Console.SetCursorPosition(52, 15)
+        Dim into As String
+        into = Console.ReadLine()
+        If into = "1" Then
+            GoTo main
+        ElseIf into = "2" Then
+            GoTo pin
+        ElseIf into = "0" Then
+            GoTo line2
+        ElseIf into = "" Then
+            GoTo line
+        End If
+
+main:
+        Console.BackgroundColor = ConsoleColor.Black
+        Console.Clear()
+        Console.ForegroundColor = ConsoleColor.Red
+        Console.SetWindowSize(120, 40)
+        Console.SetBufferSize(120, 40)
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.WriteLine("                                   Press ' 0 ' to Terminate Transaction")
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.WriteLine("                                             Main Menu  ")
+        Console.WriteLine(Environment.NewLine + Environment.NewLine + Environment.NewLine + Environment.NewLine)
+        Console.ForegroundColor = ConsoleColor.White
+        Console.WriteLine("             <1>Statement                                                     Withdrawal <2>")
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.WriteLine("             <3>Change Pin                                                       Inquiry <4>")
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.WriteLine("             <5>QuickTeller                                                     Transfer <6>")
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.WriteLine("                                                                            Customer info <7>")
+        Console.WriteLine("                                                                                Update")
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.ForegroundColor = ConsoleColor.Red
+        Console.WriteLine("          NB:                             PLEASE USE NUMBER AS INDICATED ")
+        Console.SetCursorPosition(52, 33)
+        Dim menu As String
+        menu = Console.ReadLine()
+        If menu = "0" Then
+            GoTo line
+        ElseIf menu = "1" Then
+            GoTo stat
+        ElseIf menu = "2" Then
+            GoTo withdraw
+        ElseIf menu = "3" Then
+            GoTo pin
+        ElseIf menu = "4" Then
+            GoTo query
+        ElseIf menu = "5" Then
+            GoTo teller
+        ElseIf menu = "6" Then
+            GoTo transfer
+        ElseIf menu = "7" Then
+            GoTo info
+        ElseIf menu = "" Then
+            GoTo line
+
+
+        End If
+
+
+pin:
+        Console.BackgroundColor = ConsoleColor.Black
+        Console.Clear()
+        Console.ForegroundColor = ConsoleColor.Red
+        Console.SetWindowSize(120, 40)
+        Console.SetBufferSize(120, 40)
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.WriteLine("                                    PLEASE ENTER YOUR NEW PIN ")
+        Console.WriteLine("                                  (dIFFERENT FROM THE ORIGINAL) ")
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.ForegroundColor = ConsoleColor.White
+
+        Console.WriteLine("                                                                          proceed  ")
+        Console.SetCursorPosition(52, 15)
+        p1 = Console.ReadLine()
+        If p1.Length = 4 Then
+            GoTo pin2
+        ElseIf p1 <> 4 Then
+            GoTo pin
+        ElseIf p1 = "" Then
+            GoTo line2
+        Else
+            GoTo pin
+        End If
+pin2:
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.SetCursorPosition(52, 18)
+        Console.WriteLine("Re enter Pin")
+        Console.SetCursorPosition(52, 22)
+        p2 = Console.ReadLine()
+        If p2.Length > 4 Then
+            GoTo pin
+
+        ElseIf p2 = p1 Then
+            GoTo suc
+        ElseIf p1 = "" Then
+            GoTo pin
+        Else
+            GoTo pin
+
+        End If
+
+suc:
+        Console.BackgroundColor = ConsoleColor.Black
+        Console.Clear()
+        Console.ForegroundColor = ConsoleColor.Red
+        Console.SetWindowSize(120, 40)
+        Console.SetBufferSize(120, 40)
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.WriteLine("                                    PIN CREATED SUCCESSFULLY ")
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.ForegroundColor = ConsoleColor.White
+        Console.WriteLine("                                   Press ' 0 ' to Terminate Transaction")
+        Console.SetCursorPosition(52, 22)
+        Dim path As String
+        path = Console.ReadLine()
+        If path = "0" Then
+            GoTo line
+        ElseIf path = "" Then
+            GoTo line2
+        End If
+transfer:
+        Console.BackgroundColor = ConsoleColor.Black
+        Console.Clear()
+        Console.ForegroundColor = ConsoleColor.Red
+        Console.SetWindowSize(120, 40)
+        Console.SetBufferSize(120, 40)
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.WriteLine("                                   Press ' 0 ' to Terminate Transaction")
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.WriteLine("                                             Select Bank")
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.ForegroundColor = ConsoleColor.White
+        Console.WriteLine("         <1>  Zenith Bank                                                             Other Bank <2>")
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.WriteLine("          NB:                             PLEASE USE NUMBER AS INDICATED ")
+
+
+        Console.SetCursorPosition(52, 18)
+        Dim other As String
+        other = Console.ReadLine()
+        If other = "0" Then
+            GoTo line
+        ElseIf other = "1" Then
+            GoTo type
+        ElseIf other = "2" Then
+            GoTo banks
+        End If
+
+
+info:
+        Console.BackgroundColor = ConsoleColor.Black
+        Console.Clear()
+        Console.ForegroundColor = ConsoleColor.Red
+        Console.SetWindowSize(120, 40)
+        Console.SetBufferSize(120, 40)
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.WriteLine("                                   Press ' 0 ' to Terminate Transaction")
+
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.ForegroundColor = ConsoleColor.White
+        Console.WriteLine("                                            BVN NO :")
+        Console.WriteLine("                                         20190705010140 ")
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.WriteLine("                             Visit Nearby Zenith Bank To Get more Information ")
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.ForegroundColor = ConsoleColor.Red
+        Console.WriteLine("          NB:                             PLEASE USE NUMBER AS INDICATED ")
+
+        Console.SetCursorPosition(52, 17)
+        Dim car As String
+        car = Console.ReadLine()
+        If car = "0" Then
+            GoTo line
+        ElseIf car = "" Then
+            GoTo line
+
+        End If
+
+withdraw:
+        Console.BackgroundColor = ConsoleColor.Black
+        Console.Clear()
+        Console.ForegroundColor = ConsoleColor.Red
+        Console.SetWindowSize(120, 40)
+        Console.SetBufferSize(120, 40)
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.WriteLine("                                   Press ' 0 ' to Terminate Transaction")
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.WriteLine("                                       Please select your Account Type")
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.ForegroundColor = ConsoleColor.White
+        Console.WriteLine("                                                                      current <1>")
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+
+        Console.WriteLine("                                                                      savings <2>")
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.WriteLine("          NB:                             PLEASE USE NUMBER AS INDICATED ")
+        Dim draw As String
+        Console.SetCursorPosition(52, 18)
+        draw = Console.ReadLine
+        If draw = "1" Or draw = "2" Then
+            GoTo kudi
+        ElseIf draw = "" Then
+            GoTo line
+        ElseIf draw = "0" Then
+            GoTo line
+        End If
+kudi:
+        Console.BackgroundColor = ConsoleColor.Black
+        Console.Clear()
+        Console.ForegroundColor = ConsoleColor.Red
+        Console.SetWindowSize(120, 40)
+        Console.SetBufferSize(120, 40)
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.WriteLine("                                   Press ' 0 ' to Terminate Transaction")
+
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.ForegroundColor = ConsoleColor.White
+        Console.WriteLine("         <1>  1000                                                                       2000 <2>")
+        Console.WriteLine(Environment.NewLine)
+        Console.WriteLine("         <3>  3000                                                                       5000 <4>")
+        Console.WriteLine(Environment.NewLine)
+        Console.WriteLine("         <5> 10000                                                                      Others<6>")
+        Console.WriteLine(Environment.NewLine)
+        Console.WriteLine(Environment.NewLine)
+        Console.ForegroundColor = ConsoleColor.Red
+        Console.WriteLine("          NB:                             PLEASE USE NUMBER AS INDICATED ")
+        Dim owo As String
+        owo = Console.ReadLine()
+        If password = pass Then
+            If owo = "2" Then
+                GoTo emd
+            ElseIf owo = "1" Then
+                GoTo emd
+            ElseIf owo = "3" Then
+                GoTo emd
+            ElseIf owo = "4" Then
+                GoTo emd
+            ElseIf owo = "5" Then
+                GoTo emd
+            ElseIf owo = "6" Then
+                GoTo order
+            End If
+        ElseIf password <> pass Then
+            GoTo wrong
+
+        End If
+emd:
+        Console.BackgroundColor = ConsoleColor.Black
+        Console.Clear()
+        Console.ForegroundColor = ConsoleColor.Red
+        Console.SetWindowSize(120, 40)
+        Console.SetBufferSize(120, 40)
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.WriteLine("                                   Press ' 0 ' to Terminate Transaction")
+
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.ForegroundColor = ConsoleColor.White
+order:
+wrong:
+
+
+stat:
+        Console.BackgroundColor = ConsoleColor.Black
+        Console.Clear()
+        Console.ForegroundColor = ConsoleColor.Red
+        Console.SetWindowSize(120, 40)
+        Console.SetBufferSize(120, 40)
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.WriteLine("                                   Press ' 0 ' to Terminate Transaction")
+
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.ForegroundColor = ConsoleColor.White
+        Console.WriteLine("                                          Services unavailable")
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.ForegroundColor = ConsoleColor.Red
+        Console.WriteLine("          NB:                             PLEASE USE NUMBER AS INDICATED ")
+
+        Console.SetCursorPosition(52, 22)
+        Dim un As String
+        un = Console.ReadLine()
+        If un = "0" Then
+            GoTo line
+        ElseIf un = "" Then
+            GoTo line
+
+        End If
+
+
+teller:
+        Console.BackgroundColor = ConsoleColor.Black
+        Console.Clear()
+        Console.ForegroundColor = ConsoleColor.Red
+        Console.SetWindowSize(120, 40)
+        Console.SetBufferSize(120, 40)
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.WriteLine("                                   Press ' 0 ' to Terminate Transaction")
+
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.ForegroundColor = ConsoleColor.White
+        Console.WriteLine("                                          Temporary unavailable")
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.ForegroundColor = ConsoleColor.Red
+        Console.WriteLine("          NB:                             PLEASE USE NUMBER AS INDICATED ")
+
+        Console.SetCursorPosition(52, 22)
+        Dim tell As String
+        tell = Console.ReadLine()
+        If tell = "0" Then
+            GoTo line
+        ElseIf tell = "" Then
+            GoTo line
+
+        End If
+
+query:
+        Console.BackgroundColor = ConsoleColor.Black
+        Console.Clear()
+        Console.ForegroundColor = ConsoleColor.Red
+        Console.SetWindowSize(120, 40)
+        Console.SetBufferSize(120, 40)
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.WriteLine("                                   Press ' 0 ' to Terminate Transaction")
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.ForegroundColor = ConsoleColor.White
+        Console.WriteLine("                                         Total Amount : " & money)
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+
+        Console.WriteLine("          NB:                             PLEASE USE NUMBER AS INDICATED ")
+        Console.SetCursorPosition(52, 18)
+        Dim know As String
+        know = Console.ReadLine()
+        If know = "" Or know = "0" Then
+            GoTo line
+        End If
+
+
+banks:
+        Console.BackgroundColor = ConsoleColor.Black
+        Console.Clear()
+        Console.ForegroundColor = ConsoleColor.Red
+        Console.SetWindowSize(120, 40)
+        Console.SetBufferSize(120, 40)
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.WriteLine("                                   Press ' 0 ' to Terminate Transaction")
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.ForegroundColor = ConsoleColor.White
+
+        Console.WriteLine("         <1>  FBN Bank                                                             STERLING Bank <2>")
+        Console.WriteLine(Environment.NewLine)
+        Console.WriteLine("         <3>  ACCESS Bank                                                          PROVIDENCE Bank <4>")
+        Console.WriteLine(Environment.NewLine)
+        Console.WriteLine("         <5>  POLARIS Bank                                                         UBA Bank <6>")
+        Console.WriteLine(Environment.NewLine)
+        Console.WriteLine("         <7>  GTB Bank                                                             UNKNOW Bank <8>")
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.WriteLine(Environment.NewLine)
+        Console.ForegroundColor = ConsoleColor.Red
+        Console.WriteLine("          NB:                             PLEASE USE NUMBER AS INDICATED ")
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.SetCursorPosition(52, 18)
+        Dim nah As String
+        nah = Console.ReadLine()
+        If nah = "1" Then
+            GoTo type2
+        ElseIf nah = "2" Then
+            GoTo type2
+        ElseIf nah = "3" Then
+            GoTo type2
+        ElseIf nah = "4" Then
+            GoTo type2
+        ElseIf nah = "5" Then
+            GoTo type2
+        ElseIf nah = "6" Then
+            GoTo type2
+        ElseIf nah = "7" Then
+            GoTo type2
+        ElseIf nah = "8" Then
+            GoTo type2
+        ElseIf nah = "0" Then
+            GoTo line
+        ElseIf nah = "" Then
+            GoTo line
+        End If
+
+type:
+        Console.BackgroundColor = ConsoleColor.Black
+        Console.Clear()
+        Console.ForegroundColor = ConsoleColor.Red
+        Console.SetWindowSize(120, 40)
+        Console.SetBufferSize(120, 40)
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.WriteLine("                                   Press ' 0 ' to Terminate Transaction")
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.WriteLine("                                       Please select your Account Type")
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.ForegroundColor = ConsoleColor.White
+        Console.WriteLine("                                                                      current <1>")
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+
+        Console.WriteLine("                                                                      savings <2>")
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.WriteLine("          NB:                             PLEASE USE NUMBER AS INDICATED ")
+        Dim sel As String
+        Console.SetCursorPosition(52, 18)
+        sel = Console.ReadLine
+        If sel = "1" Or sel = "2" Then
+            GoTo number
+        ElseIf sel = "" Then
+            GoTo line
+        ElseIf sel = "0" Then
+            GoTo line
+        End If
+
+
+type2:
+        Console.BackgroundColor = ConsoleColor.Black
+        Console.Clear()
+        Console.ForegroundColor = ConsoleColor.Red
+        Console.SetWindowSize(120, 40)
+        Console.SetBufferSize(120, 40)
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.WriteLine("                                   Press ' 0 ' to Terminate Transaction")
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.WriteLine("                                       Please select your Account Type")
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.ForegroundColor = ConsoleColor.White
+        Console.WriteLine("                                                                      current <1>")
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+
+        Console.WriteLine("                                                                      savings <2>")
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+
+        Console.WriteLine("          NB:                             PLEASE USE NUMBER AS INDICATED ")
+        Dim ele As String
+        Console.SetCursorPosition(52, 18)
+        ele = Console.ReadLine
+        If ele = "1" Or ele = "2" Then
+            GoTo number
+        ElseIf ele = "" Then
+            GoTo line
+        ElseIf ele = "0" Then
+            GoTo line
+        End If
+
+number:
+        Console.BackgroundColor = ConsoleColor.Black
+        Console.Clear()
+        Console.ForegroundColor = ConsoleColor.Red
+        Console.SetWindowSize(120, 40)
+        Console.SetBufferSize(120, 40)
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.WriteLine("                                   Press ' 0 ' to Terminate Transaction")
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.ForegroundColor = ConsoleColor.White
+        Console.WriteLine("                                           Enter Beneficiary Account Number")
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.WriteLine("          NB:                             PLEASE USE NUMBER AS INDICATED ")
+        Console.SetCursorPosition(52, 13)
+        Dim num As String
+        num = Console.ReadLine()
+        If num.Length = 10 Then
+            GoTo amount
+        ElseIf num.Length <> 10 Then
+            GoTo number
+        ElseIf num = "0" Then
+            GoTo line
+        ElseIf num = "" Then
+            GoTo transfer
+        End If
+amount:
+        Console.BackgroundColor = ConsoleColor.Black
+        Console.Clear()
+        Console.ForegroundColor = ConsoleColor.Red
+        Console.SetWindowSize(120, 40)
+        Console.SetBufferSize(120, 40)
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.WriteLine("                                   Press ' 0 ' to Terminate Transaction")
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.WriteLine("                                           Enter Amount")
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.WriteLine("          NB:                             PLEASE USE NUMBER AS INDICATED ")
+        Console.SetCursorPosition(52, 13)
+        Dim cash As Double
+        cash = Console.ReadLine()
+        If cash <= money Then
+            GoTo succues
+        ElseIf cash > money Then
+            GoTo reject
+        End If
+succues:
+        Console.BackgroundColor = ConsoleColor.Black
+        Console.Clear()
+        Console.ForegroundColor = ConsoleColor.Red
+        Console.SetWindowSize(120, 40)
+        Console.SetBufferSize(120, 40)
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.WriteLine("                                   Press ' 0 ' to Terminate Transaction")
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.ForegroundColor = ConsoleColor.White
+        Console.WriteLine("                                          Transfer Successful")
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.WriteLine("          NB:                             PLEASE USE NUMBER AS INDICATED ")
+        Dim okay As String
+        Console.SetCursorPosition(52, 23)
+        okay = Console.ReadLine()
+        If okay = "0" Then
+            GoTo line
+        ElseIf okay = "" Then
+            GoTo line
+        End If
+reject:
+        Console.BackgroundColor = ConsoleColor.Black
+        Console.Clear()
+        Console.ForegroundColor = ConsoleColor.Red
+        Console.SetWindowSize(120, 40)
+        Console.SetBufferSize(120, 40)
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.WriteLine("                                   Press ' 0 ' to Terminate Transaction")
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.ForegroundColor = ConsoleColor.White
+        Console.WriteLine("                                          Insufficient Fund")
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.ForegroundColor = ConsoleColor.White
+        Console.WriteLine("                                                                      Try Again! <1>")
+        Console.WriteLine(Environment.NewLine + Environment.NewLine)
+        Console.WriteLine("          NB:                             PLEASE USE NUMBER AS INDICATED ")
+        Dim fund As String
+        Console.SetCursorPosition(52, 23)
+        fund = Console.ReadLine()
+        If fund = "0" Or fund = "" Then
+            GoTo line
+        ElseIf fund = "1" Then
+            GoTo transfer
+        End If
+
+
+
+
+        Console.ReadKey()
+
+    End Sub
+
+End Module
+
